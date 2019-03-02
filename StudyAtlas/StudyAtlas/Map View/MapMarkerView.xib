@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapMarkerView" customModule="StudyAtlas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlU-3N-QfL">
+                    <rect key="frame" x="24" y="38" width="102" height="25"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="5bP-G5-8QL"/>
+                        <constraint firstAttribute="height" constant="25" id="ywi-uM-qgb"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="more info">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.2795740746" blue="0.37995871110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="15" name="Futura-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="infoButtonClicked" destination="iN0-l3-epB" eventType="touchUpInside" id="qoV-Se-gVt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-54-K4r">
+                    <rect key="frame" x="7" y="10" width="136" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="7oF-gG-fqZ"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Site Name">
+                            <attributes>
+                                <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="20" name="Futura-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" red="0.0" green="0.2784313725" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Y0-54-K4r" secondAttribute="trailing" constant="7" id="8ie-VY-7Pd"/>
+                <constraint firstItem="UlU-3N-QfL" firstAttribute="top" secondItem="4Y0-54-K4r" secondAttribute="bottom" constant="4" id="Ak3-BX-nJc"/>
+                <constraint firstItem="UlU-3N-QfL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="B8e-Q8-rVn"/>
+                <constraint firstItem="4Y0-54-K4r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KOT-M9-cFU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UlU-3N-QfL" secondAttribute="trailing" constant="24" id="RBg-2Y-zDr"/>
+                <constraint firstItem="4Y0-54-K4r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="WGn-hD-B47"/>
+                <constraint firstItem="4Y0-54-K4r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="yMP-H7-5Ie"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoButton" destination="UlU-3N-QfL" id="zNc-Og-FU5"/>
+                <outlet property="siteLabel" destination="4Y0-54-K4r" id="3YJ-pY-c92"/>
+            </connections>
+            <point key="canvasLocation" x="556.79999999999995" y="-232.53373313343329"/>
+        </view>
+    </objects>
+</document>

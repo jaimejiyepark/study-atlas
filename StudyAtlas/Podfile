@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'StudyAtlas' do
+  use_frameworks!
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'SideMenu'
+end
